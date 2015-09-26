@@ -24,33 +24,17 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 
-	// Draw Jordi's color
-//	ofSetColor(colorJordi);
-//	ofRect(100, 100, 100, 100);
-//	ofDrawBitmapStringHighlight("Jordi's color", 100,200);
 
-	r.dibujaRecuadro(colorJordi, ofPoint(100,100), 100, 300, "Jordi's color");
+    for (int i = 0; i<1024; i++){
+	r.dibujaRecuadro(colorJordi, ofPoint(0+i,0),10,10);
 	
-	// Draw Alvaro's color
-//	ofSetColor(colorAlvaro);
-//	ofRect(200, 200, 100, 100);
-//	ofDrawBitmapStringHighlight("Alvaro's color", 200,300);
-
-	r.dibujaRecuadro(colorAlvaro, ofPoint(200,200), 100, 100, "Alvaro's color");
+	r.dibujaRecuadro(colorAlvaro, ofPoint(0+i,40), 30, 30);
 	
-	// Draw Fernando's color
-//	ofSetColor(colorFernando);
-//	ofRect(400, 400, 100, 100);
-//	ofDrawBitmapStringHighlight("Fernando's color", 400,500);
-
-	r.dibujaRecuadro(colorFernando, ofPoint(400,400), 100, 100, "Fernando's color");
+	r.dibujaRecuadro(colorFernando, ofPoint(0+i,8), 50, 50);
 	
-	// Draw JuanCarlos’s color
-//	ofSetColor(colorJuanCarlos);
-//	ofRect(100, 400, 100, 100);
-//	ofDrawBitmapStringHighlight("JuanCarlos color", 100,500);
-	
-	r.dibujaRecuadro(colorJuanCarlos, ofPoint(100,400), 100, 100, "JuanCarlos color");
+	r.dibujaRecuadro(colorJuanCarlos, ofPoint(0+i,110), 60, 60);
+    
+    }
 	
 }
 
